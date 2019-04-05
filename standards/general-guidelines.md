@@ -4,7 +4,7 @@ You must follow the [API First Principle](design-principles.md#api-first), more
 specifically:
 
   - You must define APIs first, before coding its implementation, [using
-    OpenAPI as specification language](#101)
+    OpenAPI as specification language](#must-provide-api-specification-using-openapi)
 
   - You must design your APIs consistently with this guidelines
 

@@ -199,8 +199,7 @@ but are not limited to:
     language(s).
 
   - [`Content-Location`](https://tools.ietf.org/html/rfc7231#section-3.1.4.2)
-    indicates where the body can be found otherwise ([{MAY} Use
-    Content-Location Header](#179) for more details\]).
+    indicates where the body can be found otherwise.
 
   - [`Content-Range`](https://tools.ietf.org/html/rfc7233#section-4.2)
     is used in responses to range requests to indicate which part of the
@@ -340,10 +339,10 @@ response.
 | Code | Meaning                                                                                                                                                                                                                                                  | Methods                  |
 | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | 200  | OK - this is the standard success response                                                                                                                                                                                                               | All                      |
-| 201  | Created - Returned on successful entity creation. You are free to return either an empty response or the created resource in conjunction with the Location header. (More details found in the [???](#common-headers).) *Always* set the Location header. | POST, PUT                |
+| 201  | Created - Returned on successful entity creation. You are free to return either an empty response or the created resource in conjunction with the Location header. (More details found in [common headers](#must-use-content-headers-correctly).) *Always* set the Location header. | POST, PUT                |
 | 202  | Accepted - The request was successful and will be processed asynchronously.                                                                                                                                                                              | POST, PUT, DELETE, PATCH |
 | 204  | No content - There is no response body                                                                                                                                                                                                                   | PUT, DELETE, PATCH       |
-| 207  | Multi-Status - The response body contains multiple status informations for different parts of a batch/bulk request. See [{MUST} Use Code 207 for Batch or Bulk Requests](#152).                                                                          | POST                     |
+| 207  | Multi-Status - The response body contains multiple status informations for different parts of a batch/bulk request. See [MUST Use Code 207 for Batch or Bulk Requests](#must-use-code-207-for-batch-or-bulk-requests).                                                                          | POST                     |
 
 ## Redirection Codes
 

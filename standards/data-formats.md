@@ -21,27 +21,23 @@ Other media types may be used in following cases:
 
 ## JSON Payload
 
-Represent date and time format as [RFC 3339](#SHOULD Date property values should conform to RFC 3339).
+Represent date and time format as [RFC 3339](#should-date-property-values-should-conform-to-rfc-3339).
 
 ## HTTP headers
 
-HTTP headers including the proprietary headers use the [HTTP date format
-defined in RFC
-7231](http://tools.ietf.org/html/rfc7231#section-7.1.1.1).
+HTTP headers including the proprietary headers use the [HTTP date format defined in RFC 7231](http://tools.ietf.org/html/rfc7231#section-7.1.1.1).
 
 # MAY Use Standards for Country, Language and Currency Codes
 
 Use the following standard formats for country, language and currency
 codes:
 
-  - [ISO 3166-1-alpha2 country
-    codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+  - [ISO 3166-1-alpha2 country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
     
       - (It is "GB", not "UK", even though "UK" has seen some use at
         Zalando)
 
-  - [ISO 639-1 language
-    code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+  - [ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
     
       - [BCP-47](https://tools.ietf.org/html/bcp47) (based on ISO 639-1)
         for language variants

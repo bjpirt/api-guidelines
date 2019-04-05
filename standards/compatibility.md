@@ -13,10 +13,8 @@ There are two techniques to change APIs without breaking them:
   - introduce new API versions and still support older versions
 
 We strongly encourage using compatible API changes and discourage
-versioning (see rules [113](#113),[114](#114) below). The following
-guidelines for service providers ([rule 107](#107)) and consumers ([rule
-108](#108)) enable us (having Postel’s Law in mind) to make compatible
-changes without versioning.
+versioning. The following guidelines for service providers and consumers
+enable us to make compatible changes without versioning.
 
 **Note:** There is a difference between incompatible and breaking
 changes. Incompatible changes are changes that are not covered by the
@@ -25,7 +23,7 @@ deployed into operation, and thereby breaking running API consumers.
 Usually, incompatible changes are breaking changes when deployed into
 operation. However, in specific controlled situations it is possible to
 deploy incompatible changes in a non-breaking way, if no API consumer is
-using the affected API aspects (see also [Deprecation](#deprecation)).
+using the affected API aspects (see also [Deprecation](deprecation.md)).
 
 **Hint:** Please note that the compatibility guarantees are for the "on
 the wire" format. Binary or source compatibility of code generated from

@@ -24,8 +24,7 @@ jumping to a specific page is far less used than navigation via
 pagination.
 
 **Note:** To provide a consistent look and feel of pagination patterns,
-you must stick to the common query parameter names defined in
-[???](#137).
+you must stick to the [common query parameter names](naming.md#must-stick-to-conventional-query-parameters).
 
 # SHOULD Prefer Cursor-Based Pagination, Avoid Offset-Based Pagination
 

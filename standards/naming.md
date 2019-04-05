@@ -43,7 +43,7 @@ paginating, you must stick to the following naming conventions:
   - `q` — default query parameter (e.g. used by browser tab completion);
     should have an entity specific alias, like sku
 
-  - `sort` — comma-separated (as defined in [???](#154)) list of fields
+  - `sort` — comma-separated list of fields
     to define the sort order. To indicate sorting direction, fields may
     be prefixed with `+` (ascending) or `-` (descending), e.g.
     /sales-orders?sort=+id
@@ -55,7 +55,7 @@ paginating, you must stick to the following naming conventions:
     Implementing `embed` correctly is difficult, so do it with care.
 
   - `offset` — numeric offset of the first element on a page. See
-    [???](#pagination) section.
+    [pagination](pagination.md) section.
 
   - `limit` — client suggested limit to restrict the number of entries
-    on a page. See [???](#pagination) section below.
+    on a page. See [pagination](pagination.md) section.

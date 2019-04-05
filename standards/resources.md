@@ -35,7 +35,7 @@ As a rule of thumb resources should be defined to cover 90% of all its
 client’s use cases. A *useful* resource should contain as much
 information as necessary, but as little as possible. A great way to
 support the last 10% is to allow clients to specify their needs for
-more/less information by supporting filtering and [embedding](#157).
+more/less information by supporting filtering and embedding.
 
 # MUST Keep URLs Verb-Free
 
