@@ -88,18 +88,18 @@ components:
           example: 42
 ```
 
-# MUST use camelCase property names: `^[a-z][A-Z0-9]*$`
+# MUST Use camelCase property names: `^[a-z][A-Z0-9]*$`
 
 Property names are restricted to ASCII strings. The first character must
 be a letter, or an underscore, and subsequent characters can be a
 letter, or a number.
 
-# MUST pluralize array names
+# MUST Pluralize array names
 
 To indicate they contain multiple values prefer to pluralize array
 names. This implies that object names should in turn be singular.
 
-# MUST Boolean property values must not be null
+# MUST Not have null boolean property values
 
 Schema based JSON properties that are by design booleans must not be
 presented as nulls. A boolean is essentially a closed enumeration of two
@@ -109,7 +109,7 @@ or statuses - for example acceptedTermsAndConditions with true or
 false can be replaced with termsAndConditions with values yes, no
 and unknown.
 
-# SHOULD Null values should have their fields removed
+# SHOULD Remove null value fields
 
 OpenAPI, which is in common use, doesn’t support null field values (it
 does allow omitting that field completely if it is not marked as
@@ -119,12 +119,12 @@ a meaningful value - for example, JSON Merge Patch
 [RFC 7382](https://tools.ietf.org/html/rfc7386)) using null to indicate
 property deletion.
 
-# MUST Empty array values should not be null
+# MUST Use empty array values instead of null
 
 Empty array values can unambiguously be represented as the empty list,
 `[]`.
 
-# SHOULD Date property values should conform to RFC 3339
+# SHOULD Ensure date property values conform to RFC 3339
 
 Use the date and time formats defined by
 [RFC 3339](http://tools.ietf.org/html/rfc3339#section-5.6):
@@ -161,7 +161,7 @@ timestamps, but this can introduce interpretation issues with precision
 1460062925000 or 1460062925.000. Date strings, though more verbose and
 requiring more effort to parse, avoid this ambiguity.
 
-# SHOULD Time durations and intervals could conform to ISO 8601
+# SHOULD Ensure time durations and intervals conform to ISO 8601
 
 Schema based JSON properties that are by design durations and intervals
 could be strings formatted as recommended by ISO 8601 ([Appendix A of
