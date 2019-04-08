@@ -3,7 +3,7 @@
 Example:
 
 ``` http
-/shipment-orders/{shipment-order-id}
+/shipment-orders/\{shipment-order-id\}
 ```
 
 This applies to concrete path segments and not the names of path
