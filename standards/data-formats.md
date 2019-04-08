@@ -1,8 +1,10 @@
-# MUST Use JSON:API to Encode Structured Data
+# MAY Use JSON:API to Encode Structured Data
 
 APIs could represent resources with many different structures, but picking a standard is a good thing.
 [JSON:API](https://jsonapi.org/) is a good approach and enables useful things like including related resources in the same request.
 I tend to prefer a minimal JSON:API implementation to start with and add features if required.
+
+The most important thing, however, is to pick a structure and stick to it.
 
 # MAY Use non-JSON Media Types for Binary Data or Alternative Content Representations
 
