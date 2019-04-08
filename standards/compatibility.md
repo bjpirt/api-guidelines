@@ -130,7 +130,7 @@ anymore" description or can be removed from the API definition as long
 as the server ignores this specific
 parameter.
 
-# SHOULD Avoid Versioning
+# SHOULD Avoid Creating New Versions
 
 When changing your RESTful APIs, do so in a compatible way and avoid
 generating additional API versions. Multiple versions can significantly
@@ -152,7 +152,8 @@ one of these three ways:
 
 As we discourage versioning by all means because of the manifold
 disadvantages, we strongly recommend to only use the first two
-approaches. Versioning should be a last resort.
+approaches. Adding a new version adds to the support and maintenance costs
+and adds complexity for users. A new version should be a last resort.
 
 # MUST Use URI Versioning
 
