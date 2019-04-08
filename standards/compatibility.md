@@ -130,6 +130,12 @@ anymore" description or can be removed from the API definition as long
 as the server ignores this specific
 parameter.
 
+# MUST Use URI Versioning
+
+With URI versioning a (major) version number is included in the path,
+e.g. /v1/customers. If you don't put it in at the beginning then it's 
+almost impossible to retro-fit.
+
 # SHOULD Avoid Creating New Versions
 
 When changing your RESTful APIs, do so in a compatible way and avoid
@@ -154,9 +160,3 @@ As we discourage versioning by all means because of the manifold
 disadvantages, we strongly recommend to only use the first two
 approaches. Adding a new version adds to the support and maintenance costs
 and adds complexity for users. A new version should be a last resort.
-
-# MUST Use URI Versioning
-
-With URI versioning a (major) version number is included in the path,
-e.g. /v1/customers. If you don't put it in at the beginning then it's 
-almost impossible to retro-fit
