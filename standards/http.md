@@ -379,7 +379,7 @@ response.
 | 501  | Not Implemented - server cannot fulfill the request (usually implies future availability, e.g. new feature).                                                                                                                                                                                                                          | All     |
 | 503  | Service Unavailable - service is (temporarily) not available (e.g. if a required component or downstream service is not available) — client retry may be sensible. If possible, the service should indicate how long the client should wait by setting the ['Retry-After'](https://tools.ietf.org/html/rfc7231#section-7.1.3) header. | All     |
 
-# MUST Use Most Specific HTTP Status Codes
+# MUST Use Most Specific HTTP Status Code
 
 You must use the most specific HTTP status code when returning
 information about your request processing status or error situations.
